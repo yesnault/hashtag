@@ -49,7 +49,7 @@ const (
 
 	hashtagLetters      = "\\pL\\pM"
 	hashtagNumerals     = "\\p{Nd}"
-	hashtagSpecialChars = "/" + "\\." + "_" + "-" + //underscore
+	hashtagSpecialChars = "/" + "\\." + "_" + "\\-" + //underscore
 		"\\x{200c}" + // ZERO WIDTH NON-JOINER (ZWNJ)
 		"\\x{200d}" + // ZERO WIDTH JOINER (ZWJ)
 		"\\x{a67e}" + // CYRILLIC KAVYKA
