@@ -57,13 +57,13 @@ func replyTestWrapper(text string) []string {
 }
 
 func ExampleExtractHashtags() {
-	fmt.Println(ExtractHashtags("this is a #hashtag but this isn't #http://example.com"))
-	// Output: [hashtag]
+	fmt.Println(ExtractHashtags("this is a #hashtag and this too #http://example.com"))
+	// Output: [hashtag http://example.com]
 }
 
 func ExampleExtractHashtagsWithIndices() {
-	fmt.Println(ExtractHashtagsWithIndices("this is a #hashtag but this isn't #http://example.com"))
-	// Output: [{11 18 hashtag}]
+	fmt.Println(ExtractHashtagsWithIndices("this is a #hashtag and this too #http://example.com"))
+	// Output: [{11 18 hashtag} {33 51 http://example.com}]
 }
 
 func ExampleExtractMentions() {
